@@ -1,0 +1,629 @@
+
+body{
+    
+    margin: 0px;
+    padding: 0px;
+  
+
+ 
+
+
+}
+
+.contenedorGrid{
+    
+    z-index: 1;
+    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+ 
+   
+}
+.g1{
+    padding: 7vw;
+    background-color: rgb(29, 28, 28);
+    height: 4500px;
+}
+.g2{
+    
+    background-color: rgba(17, 17, 17, 0.993);
+}
+.p{
+color:blue;
+}
+.nombre{
+    text-align: center;
+    font-size: 50px;
+    color:#ad8c30;
+    font-family: 'Acme', sans-serif;
+    margin-top: 15vh;
+}
+.contenedorNombre{
+
+ 
+    display:flex;
+    flex-direction: column;
+    position:absolute;
+    margin:auto;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+ 
+}
+.logoProgra{
+margin-left: 27%;
+
+}
+.barra{
+    background-color: white;
+    width: 140px;
+    height: 10px;
+    margin-top: 20px;
+    
+}
+.puesto{
+    font-family: 'Acme', sans-serif;
+    color:white;
+    font-size: 20px;
+    margin-top: 20px;
+   
+}
+
+.circulo{
+    transition: all 1s;
+    margin-top: 150px;
+    
+    background:white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px #ad8c30 solid;
+}
+.triangulo {
+    width: 0; 
+    height: 0; 
+   
+    margin-left: 22%;
+    margin-top: 24%;
+    transform: rotate(90deg);
+    border-left: 40px solid #ad8c30;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent; 
+    
+}
+.circulo:hover{
+    transition: all 1s;
+    transform: scale(1.2);
+    background-color: black;
+    cursor: pointer;
+}
+.barrasAbrirLateral{
+    color:white;
+    font-size: 50px;
+   
+}
+.ok{
+    width: 47vw;
+    
+   position:absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+
+  
+}
+.logoIzq1{
+    transition: all 2s;
+    position: absolute;
+    border-radius: 10px;
+    width: 115px;
+height: 20px;
+background-color: #ad8c30;
+transform: rotate(135deg);
+}
+.logoIzq2{
+    transition: all 2s;
+    position: absolute;
+    margin-top: 70px;
+    width: 115px;
+height: 20px;
+background-color: #ad8c30;
+transform: rotate(45deg);
+border-radius: 10px;
+}
+.barraInclinadaLogo{
+    transition: all 2s;
+    position: absolute;
+   margin-top: 4vh;
+    margin-left: 60px;
+    width: 170px;
+height: 20px;
+background-color: #ad8c30;
+transform: rotate(105deg);
+border-radius: 10px;
+}
+.logoDer1{
+    transition: all 2s;
+    margin-left: 170px;
+    position: absolute;
+    margin-top: 75px;
+    width: 115px;
+height: 20px;
+background-color: #ad8c30;
+transform: rotate(135deg);
+border-radius: 10px;
+
+
+}
+.logoDer2{
+    transition: all 2s;
+    margin-left: 170px;
+    position: absolute;
+    border-radius: 10px;
+    width: 115px;
+height: 20px;
+background-color: #ad8c30;
+transform: rotate(50deg);
+}
+.todo{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.flexLogo{
+    align-self: flex-start;
+    width: 63%;
+    height: 100px;
+   
+    display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.cardAbout{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: absolute;
+    margin-top: 120vh;
+    padding: 2vw;
+ 
+}
+.aboutTitulo{
+font-size: 40px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+
+}
+.aboutBody{
+    font-size: 15px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+color: white;
+}
+.bodyB{
+    margin-left: 3vw ;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
+}
+.sobreMiTitulo{
+    font-size: 5vw;
+    color:#ad8c30;
+    font-family: 'Acme', sans-serif;
+}
+.barraSobreMi{
+    width: 200px;
+    height: 8px;
+    background-color: azure;
+}
+.btnContacto{
+    width: 150px;
+    height: 40px;
+    background-color: #ad8c30;
+    color: black;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px black solid;
+
+}
+.btnContacto:hover{
+    cursor: pointer;
+    box-shadow: orange 2px 4px 25px;
+}
+.btnContacto:hover + .feliz{
+    display: block;
+    color: orange;
+    margin-left: 5vw;
+    display: block;
+    margin-top: 1vh;
+}
+
+.feliz{
+    display: none;
+    font-size: 30px;
+    
+    position: absolute;
+    margin-left: 5vw;
+   
+}
+.flexFoto{
+    
+    
+    display: flex;
+        justify-content: flex-end;
+}
+.marcoMiFoto{
+   
+ margin-top: 30px;
+ margin-left: -40px;
+    z-index: 2;
+    width: 200px;
+    height: 240px;
+    border:10px #ad8c30 solid ;
+    position: absolute;
+}
+
+.miFoto{
+    
+    z-index: 5;
+    margin-right: 100px;
+   position:relative;
+    border:10px rgba(17, 17, 17, 0.993) solid;
+    
+   
+}
+
+.gridIzqAbout{
+   
+    padding: 2vw;
+}
+.contenedorContactar{
+    
+    width: 100%;
+    
+display: flex;
+justify-content: flex-end;
+
+}
+
+.conWhats{
+    font-size: 50px;
+    color: #00BB2D;
+    transition: all 1s;
+
+}
+.conWhats:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+    transition: all 1s;
+}
+.containerTecnologias{
+   
+    padding: 5vw;
+ width: 88.5vw;
+    
+    margin-top: 300vh;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+
+}
+.logoTec{
+    margin-top: 5vh;
+   border-image: round;
+    width: 110px;
+    height: 130px;
+    transition: all 1s;
+    
+    filter: grayscale(50%);
+    
+}
+.logoPhp{
+    width: 190px;
+}
+.logoBd{
+    
+    width: 190px;
+}
+
+.logoSharp{
+width: 120px;
+}
+.logoSharp:hover{
+    cursor: pointer;
+}
+
+.circularLogo{
+    width: 130px;
+    margin-left: -10px;
+}
+.java{
+    height: 140px;
+    width: 150px;
+}
+
+.subir:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: all 1s;
+    filter: grayscale(0%);
+  
+}
+.flexTitTecno{
+    width: 100%;
+    
+    font-size: 5vw;
+    color:#ad8c30;
+    font-family: 'Acme', sans-serif;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
+.logoBoostrap{
+    width: 140px;
+    margin-left: -10px;
+}
+
+.chat{
+    width: 100%;
+   
+    margin-top: 200vh;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+.cardChat{
+     
+   width: 100%;
+    display: grid;
+    grid-template-columns:30% 40% 30%;
+
+
+
+}
+.chatBody{
+   
+   padding: 15px;
+    border: 2px white solid;
+    box-shadow: gray 2px 4px 15px;
+  
+   
+}
+.preguntas{
+    padding: 20px;
+}
+.preguntaChat{
+    margin-top: 20px;
+    text-align: center;
+    border: 2px #ad8c30 solid;
+    border-radius: 7px;
+    padding: 4px;
+    color: white;
+    background-color: rgba(17, 17, 17, 0.993);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.preguntaChat:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.preguntaChat:hover label{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.conoceMas{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.titConoceMas{
+    font-size: 5vw;
+    color:#ad8c30;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+
+
+}
+.barraConoceMas{
+    width: 100%;
+    height: 7px;
+    background-color: white;
+}
+.imgRobot{
+    align-self: center;
+}
+.preguntaChatD{
+   
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    background-color: orange;
+    color: black;
+    width: 200px;
+  
+    display: flex;
+    flex-direction: column;
+    margin-top:10px;
+    font-size: 20px;
+
+
+}
+
+.flexPreguntaChat{
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+   
+
+}
+.seccionRespuestas{
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+}
+.flexRespuestaChat{
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.RespuestaChatD{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    background-color:rgb(101, 146, 160);
+    color: black;
+    width: 200px;
+  
+    display: flex;
+    flex-direction: column;
+    margin-top:10px;
+    font-size: 20px;
+}
+.preguntap{
+    margin-top: 20px;
+    text-align: center;
+    border: 2px blue solid;
+    border-radius: 7px;
+    padding: 4px;
+    color: blue;
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.imgRobotChat{
+    opacity: 10%;
+}
+.containerProyectos{
+    width: 100%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 400vh;
+    
+}
+.proyectosMios{
+   
+display: flex;
+width: 100%;
+justify-content: center;
+flex-direction: column;
+
+}
+.proyectosParticipado{
+    display: flex;
+width: 100%;
+justify-content: center;
+flex-direction: column;
+}
+.titMisProyectos{
+    text-align: center;
+    font-size: 50px;
+    color:#ad8c30;
+    font-family: 'Acme', sans-serif;
+
+}
+.titProyectosP{
+    text-align: center;
+    font-size: 50px;
+    color:#ad8c30;
+    font-family: 'Acme', sans-serif;
+}
+.afSeguros{
+    margin-top: 40px;
+    width: 300px;
+    height: 250px;
+    align-self: center;
+    
+}
+.frameYoutube{
+    margin-top: 40px;
+    align-self: center;
+}
+
+@media only screen and (max-width:500px){
+    .circulo{display: none;}
+.cardAbout{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 78%;
+   margin-left: 60px;
+ 
+}
+.gridIzqAbout{
+    margin-top: 100px;
+    align-self: center;
+    display: flex;
+    align-self: center;
+   
+   
+    
+}
+.gridDerAbout{
+    margin-top: 100px;
+   
+}
+.chat{
+margin-top: 300vh;
+grid-template-columns: 100%;
+
+}
+.cardChat{
+    grid-template-columns: 100%;
+}
+.containerTecnologias{
+    margin-left: 40px;
+  width: 78%;
+    margin-top: 550vh;
+    grid-template-columns: 50% 50%;
+    
+}
+.logoPhp{
+    width: 120px;
+    height: 80px;
+}
+.logoBd{
+    width: 120px;
+    height: 80px;
+}
+
+.containerProyectos{
+    margin-top: 700vh;
+    grid-template-columns: 100%;
+}
+.g1{
+    height: 5500px;
+}
+.frameYoutube{
+    width: 300px;
+    height: 200px;
+}
+.flexLogo{
+    margin-left: -80px;
+}
+
+}
+@keyframes blancoNC {
+    from {
+   filter: grayscale(100%);
+    }
+  
+    to {
+        filter: grayscale(0%);
+    }
+  }
+
