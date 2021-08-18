@@ -230,6 +230,8 @@ color: white;
     font-size: 20px;
     border-radius: 5px;
     border: 2px black solid;
+    padding: 5px 10px;
+    text-decoration: none;
 
 }
 .btnContacto:hover{
