@@ -68,7 +68,7 @@ if(id=='008'){
 if(id=='009'){
     var pregunta=document.getElementById("seccionRespuestas")
     .innerHTML=p+"<div class='flexPreguntaChat'><div class='preguntaChatD'><label class='textoPregunta'>"+pregunta+"</label></div></div>"+
-    "<div class='flexRespuestaChat'><div class='RespuestaChatD'><label class='textoPregunta'>"+'Considero que la mejor forma de afrontar el fracaso, es no darse por vencido, en un mundo como lo es la programacion, se encontraran problemas dia tras dia, pero considero que es esto, lo que nos hace aprender mas y mas, asi que no se deben como fracasos, si no, como una forma mas de aprender. '+
+    "<div class='flexRespuestaChat'><div class='RespuestaChatD'><label class='textoPregunta'>"+'Considero que la mejor forma de afrontar el fracaso, es no darse por vencido, en un mundo como lo es la programacion, se encontraran problemas dia tras dia, pero considero que es esto, lo que nos hace aprender mas y mas, asi que no se deben tomar como fracasos, si no, como una forma mas de aprender. '+
     ''+"</label></div></div>";
 
 }
