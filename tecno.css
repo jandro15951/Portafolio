@@ -1,0 +1,322 @@
+
+.containerGrid{
+    margin-left: 80px;
+   position: absolute;
+   margin-top: 100px;
+ 
+    width: 100%;
+   
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+  
+
+}
+.flex{
+display: flex;
+align-content: center;
+flex-direction: column;
+flex-wrap:nowrap;
+
+}
+.caja{
+
+    border-radius: 10px;
+    background-color: rgb(223, 206, 206);
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    height: 250px;
+    width: 200px;
+    position: relative;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 2px 6px #ad8c30;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+
+    
+
+   
+    
+}
+.texto{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 30px;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 10;
+    font-family:Arial, Helvetica, sans-serif;
+    
+
+}
+
+.circuloT{
+
+width: 200px;
+height: 200px;
+border-radius: 50%;
+background-image: radial-gradient(circle at 50% -20.71%, #d4f034 0, #f0bc11 25%, #db8726 50%, #944bc4 75%, #6e43b2 100%);
+margin-left: -100px;
+
+
+position: absolute;
+margin-top: 200px;
+z-index: 2;
+
+transition: all 0.5s;
+
+
+
+}
+
+.caja:hover{
+    cursor: pointer;
+}
+.caja:hover .textoLogo{
+    margin-top: 10%;
+    color: white;
+    transition: all 1s;
+    
+    
+}
+.caja:hover .texto{
+    transition: all 1s;
+    color: white;
+  
+    
+    
+}
+.caja:hover .circuloT{
+
+    transform: scale(3);
+    
+    
+}
+.caja:hover .porcentajeBorde{
+    display: block;
+  
+}
+.textoLogo{
+    margin-top: 35%;
+    text-align: center;
+    font-size: 30px;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 10;
+    font-size: 40px;
+    align-self: center;
+    color:rgb(226, 155, 48);
+
+}
+.lCss{
+    color: teal;
+}
+.circuloCss{
+    background-image: radial-gradient(circle at 50% -20.71%, #34d4f0 0, #24aeee 25%, #267bdb 50%, #1d2be6 75%, #6e43b2 100%);
+
+}
+.lVue{
+    color: rgb(60, 112, 35);
+}
+.circuloVue{
+    background-image: radial-gradient(circle at 50% -20.71%, #6cf044 0, #27d83f 25%, #18802e 50%, #1d2be6 75%, #6e43b2 100%);
+}
+.lJs{
+
+
+    color:rgb(231, 104, 19);
+    
+}
+.circuloJs{
+    background-image: radial-gradient(circle at 50% -20.71%, #dad737 0, #d8bd27 25%, #18802e 50%, #1d2be6 75%, #6e43b2 100%);
+
+}
+.lPhp{
+    color: rgb(50, 92, 92);
+}
+.circuloPhp{
+    background-image: radial-gradient(circle at 50% -20.71%, #37c7da 0, #23b3b3 25%, #12435f 50%, #1d2be6 75%, #6e43b2 100%);
+}
+.lBoo{
+    color: rgb(118, 20, 156);
+}
+.circuloBoo{
+    background-image: radial-gradient(circle at 50% -20.71%, #830de4 0, #e9157f 25%, #2261d6 50%, #1d2be6 75%, #6e43b2 100%);
+}
+.lSql{
+    color: rgb(23, 86, 223);
+}
+.circuloSql{
+    background-image: radial-gradient(circle at 50% -20.71%, #41e920 0, #217742 25%, #0c461e 50%, #1d2be6 75%, #6e43b2 100%);
+}
+.lc{
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: rgb(118, 20, 156);
+}
+.circuloc{
+    background-image: radial-gradient(circle at 50% -20.71%, #e40f79 0, #d40e50 25%, #e21721 50%, #1d2be6 75%, #6e43b2 100%);
+
+}
+.porcentajeBorde{
+    position: absolute;
+    z-index: 100;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    width: 150px;
+    height: 20px;
+    align-self: center;
+    margin-top: 170px;
+    color: white;
+    display: none;
+ 
+    text-align: center;
+    animation-name: opacidadPorcentaje;
+    animation-duration: 2s;
+   
+ 
+  
+    
+    
+
+}
+.porcentaje{
+    color: wheat;
+    width:80%;
+    height: 100%;
+    background-color: rgb(33, 41, 43);
+  
+    animation-duration: 2s;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.anima80{
+    animation-name: porcentaje;
+    animation-duration: 2s;
+}
+.anima85{
+    animation-name: porcentaje85;
+    animation-duration: 2s;
+}
+.anima75{
+    animation-name: porcentaje75;
+    animation-duration: 2s;
+}
+.anima70{
+    animation-name: porcentaje70;
+    animation-duration: 2s;
+}
+
+
+
+.pVue{
+    width: 70%;
+}
+.pCss{
+    width: 80%;
+}
+.pJs{
+    width: 70%;
+}
+.pPhp{
+    width: 75%;
+}
+.pBoos{
+    width: 85%;
+}
+.pSql{
+    width: 80%;
+}
+.pC{
+    width: 85%;
+}
+.pNet{
+    width: 85%;
+}
+
+html{
+
+    position: relative;
+    z-index: 3;
+    
+}
+
+@keyframes circulo {
+   
+    0%{
+        transform: scale(1);
+       
+        
+    }
+    100%{
+       transform: scale(3);
+
+    }
+    
+    
+}
+
+@keyframes opacidadPorcentaje {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+@keyframes porcentaje{
+    0%{
+        width: 0%;
+        color:rgb(33, 41, 43);
+    }
+    100%{
+        color:wheat;
+        width: 80%;
+    }
+
+}
+
+
+@keyframes porcentaje85{
+    0%{
+        width: 0%;
+        color:rgb(33, 41, 43);
+    }
+    100%{
+        color:wheat;
+        width: 85%;
+    }
+
+}
+
+@keyframes porcentaje70{
+    0%{
+        width: 0%;
+        color:rgb(33, 41, 43);
+    }
+    100%{
+        color:wheat;
+        width: 70%;
+    }
+
+}
+@keyframes porcentaje{
+    0%{
+        width: 0%;
+        color:rgb(33, 41, 43);
+    }
+    100%{
+        color:wheat;
+        width: 75%;
+    }
+
+}
+
+@media only screen and (max-width:500px){
+.containerGrid{
+    grid-template-columns: 100%;
+    margin-left: 20px;
+
+
+}
+}

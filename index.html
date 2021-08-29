@@ -3,6 +3,7 @@
 <head>
     
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="tecno.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +17,12 @@
     <title>Portafolio</title>
 </head>
 <body>
+    <div id="Inicio" class="Inicio"></div>
+    <a id="circuloUP" onclick="atrasVentana()" class="circuloUP">
+        <div id="trianguloUP" class="trianguloUP">
+        </div>
 
+    </a>
 
     <div class="todo">
     <div class="contenedorNombre">
@@ -54,15 +60,17 @@
 
         <label class="nombre">ALEJANDRO VASQUEZ RODRIGUEZ</label>
         <div class="barra"></div>
-        <label class="puesto">Programador</label>
+        <label id="puesto" class="puesto"></label>
 
-        <a class="circulo">
-            <div class="triangulo">
+        <a id="circulo" onclick="siguienteVentana()" class="circulo">
+            <div id="triangulo" class="triangulo">
             </div>
 
         </a>
+       
 
     </div>
+    
     
 
  
@@ -91,32 +99,33 @@
 
 
     </div>
-    <div class="cardAbout">
+    <div id="cardAbout" class="cardAbout">
         <div class="gridIzqAbout">
                 <div class="flexFoto">
 
 
                 <div>
             <div class="marcoMiFoto"></div>
-            <img class="miFoto" width="200" height="240" src="miFoto.png">
+            <img id="miFoto" class="miFoto" width="200" height="240" src="miFoto.png">
         </div>
         </div>
        
         </div>
         <div class="gridDerAbout">
             <div class="bodyB">
-                    <label class="sobreMiTitulo">Sobre Mi</label>
-                    <div class="barraSobreMi"></div>
-                <p class="aboutBody">Soy una persona proactiva, con ansias de superacion y de aprender. Actualmente curso
-                    la carrera de Bachillerato en Ingenieria Informatica, y a lo largo de los ultimos años me he concentrado en aprender
-                diferentes lenguajes de programacion y tecnologias de forma autodidactca. <br>
-                Soy educado, responsable, trabajo muy bien en equipo y tengo facilidad de aprendizaje. <br>
-                Me encuentro en busqueda de mi primer trabajo estable como programador, se parte de mi historia y contactame!</p>
+                
+                <label class="sobreMiTitulo">Sobre Mi</label>
+                    <div id="barraSobreMi" class="barraSobreMi"></div>
+                <p class="aboutBody">Soy una persona proactiva, con ansias de superación y de aprender. Actualmente curso la carrera de 
+                    Bachillerato en Ingeniería Informática, y a lo largo de los últimos años me he concentrado 
+                    en aprender diferentes lenguajes de programación y tecnologías de forma autodidacta.<br>
+                    Soy educado, responsable, trabajo muy bien en equipo y tengo facilidad de aprendizaje.<br>
+                    Me encuentro en búsqueda de mi primer trabajo estable como programador, sé parte de mi historia y contáctame!</p>
                
                
-                <div>
+                <div class="containerBtnAbout">
                     <a click="responderChat(1)" href="mailto:jandro15951@gmail.com" class="btnContacto">Contactame</a> 
-                    <i class="fas fa-smile-beam feliz"></i>
+                   
                 </div>
                 
                 
@@ -130,7 +139,7 @@
     </div>
 
 
-    <div class="chat">
+    <div id="chat" class="chat">
 
 
         <div class="cardChat">
@@ -168,7 +177,7 @@
 
         <div class="conoceMas">
             <label class="titConoceMas">Conoce mas sobre mi</label>
-            <div class="barraConoceMas"></div>
+            <div id="barraConoceMas" class="barraConoceMas"></div>
             <img class="imgRobot" width="300" height="300" src="robot.png">
            
 
@@ -177,37 +186,150 @@
 
     </div>
 
-    <div class="containerTecnologias">
-
+    <div id="containerTecnologias" class="containerTecnologias">
+    
         <div class="flexTitTecno">
+
+          
+
     <div class="tituloTecno">Tecnologias</div>
 </div>
-    <img class="logoTec subir" src="logoHtml.png">
-    <img class="logoTec subir" src="logoCss.png">
-    <img class="logoTec subir" src="logoJs.png">
-    <div>
-        <img class="logoTec logoSharp subir" src="CSharp.png">
-       
+    
+<div class="containerGrid">
+    <div class="flex">
+        <div class="caja">
+            <label class="textoLogo"><i class="fab fa-html5"></i></label>
+            <label class="texto">HTML</label>
+            
+            <div class="porcentajeBorde">
+                   
+                <div class="porcentaje anima80">80%</div></div>
+    
+            <div class="circuloT"></div> 
+        </div>
+      
+      
+    </div>
+   
+
+    <div class="flex">
+        <div class="caja">
+            <label class="textoLogo lVue"><i class="fab fa-vuejs"></i></label>
+            <label class="texto">VueJs</label>
+            <div class="porcentajeBorde">
+                   
+                <div class="porcentaje pVue anima70">70%</div></div>
+    
+            <div class="circuloT circuloVue"></div> 
+        </div>
+      
+      
+    </div>
+
+    <div class="flex">
+        <div class="caja">
+            <label class="textoLogo lCss"><i class="fab fa-css3-alt"></i></label>
+            <label class="texto">CSS</label>
+            <div class="porcentajeBorde">
+                   
+                <div class="porcentaje pCss anima80">80%</div></div>
+    
+            <div class="circuloT circuloCss"></div> 
+        </div>
+      
+      
+    </div>
+    <div class="flex">
+        <div class="caja">
+            <label class="textoLogo lJs"><i class="fab fa-js"></i></label>
+            <label class="texto ">JS</label>
+            <div class="porcentajeBorde">
+                   
+                <div class="porcentaje pJs anima70">70%</div></div>
+    
+            <div class="circuloT circuloJs"></div> 
+        </div>
+      
+      
+    </div>
+
+    <div class="flex">
+        <div class="caja">
+            <label class="textoLogo lPhp"><i class="fab fa-php"></i></label>
+            <label class="texto ">PHP</label>
+            <div class="porcentajeBorde">
+                   
+                <div class="porcentaje pPhp anima75">75%</div></div>
+    
+            <div class="circuloT circuloPhp"></div> 
+        </div>
+      
+      
+    </div>
+
+    <div class="flex">
+        <div class="caja">
+            <label class="textoLogo lBoo"><i class="fab fa-bootstrap"></i></label>
+            <label class="texto ">Boostrap</label>
+            <div class="porcentajeBorde">
+                   
+                <div class="porcentaje pBoos anima85">85%</div></div>
+    
+            <div class="circuloT circuloBoo"></div> 
+        </div>
+      
+      
+    </div>
+
+    <div class="flex">
+        <div class="caja">
+            <label class="textoLogo lSql"><i class="fas fa-database"></i></label>
+            <label class="texto ">SQL</label>
+            <div class="porcentajeBorde">
+                   
+                <div class="porcentaje pSql anima80">80%</div></div>
+    
+            <div class="circuloT circuloSql"></div> 
+        </div>
+      
+      
+    </div>
+
+    <div class="flex">
+        <div class="caja">
+            <label class="textoLogo lc">C#</label>
+            <label class="texto ">CSharp</label>
+            <div class="porcentajeBorde">
+                   
+                <div class="porcentaje pC anima85">85%</div></div>
+    
+            <div class="circuloT circuloc"></div> 
+        </div>
+      
+      
+    </div>
+
+    <div class="flex">
+        <div class="caja">
+            <label class="textoLogo lc">.Net</label>
+            <label class="texto ">Framework</label>
+            <div class="porcentajeBorde">
+                   
+                <div class="porcentaje pNet anima85">85%</div></div>
+    
+            <div class="circuloT circuloBoo"></div> 
+        </div>
+      
+      
+    </div>
+
+</div>
+
+
     </div>
     
-
-
-
-
-    <img class="logoTec logoPhp subir" src="logoPhp.png">
-    <img class="logoTec logoBd subir" src="logoBd.png">
-    <img class="logoTec logoBoostrap subir" src="logBoos.png">
-  
-    <img class="logoTec circularLogo subir" src="vue.png">
-    <img class="logoTec circularLogo subir" src="dotnet.png">
-    <img class="logoTec java subir" src="java.png">
- 
-
-
-    </div>
     
-    
-    <div class="containerProyectos">
+    <div id="containerProyectos" class="containerProyectos">
         <div class="proyectosMios">
             <label class="titMisProyectos">Mis Proyectos</label>
             <iframe class="frameYoutube" width="560" height="315" src="https://www.youtube.com/embed/ZHiNf8zX6a4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -219,6 +341,185 @@
         </div>
     </div>
 
+    <div class="contactoContainer">
 
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script>
+    window.onscroll=function(){
+        var y= window.scrollY;
+       
+        var o=document.getElementById("cardAbout").scrollHeight;
+        
+        if(y>=0 && y<o ){
+          
+          document.getElementById("miFoto").style.animationName="prueba";
+          document.getElementById("miFoto").style.animationDuration="2s";
+          
+          
+          
+          
+       }
+
+       
+        
+    };
+    var idActual=0;
+
+    function atrasVentana(){
+
+        idActual--;
+        console.log(idActual);
+        if(idActual==3){
+          
+        location.href="#containerTecnologias";
+
+        document.getElementById("circulo").style.display="block";
+        document.getElementById("triangulo").style.display="block";
+        document.getElementById("circulo").style.animationName="bajarShow";
+        document.getElementById("circulo").style.animationDuration="1s";
+
+        }
+        if(idActual==2){
+            location.href="#chat";
+
+        }
+        if(idActual==1){
+            location.href="#cardAbout";
+
+        }
+        if(idActual==0){
+            location.href="#Inicio";
+            document.getElementById("circuloUP").style.display="none";
+        document.getElementById("trianguloUP").style.display="none";
+       
+
+        }
+        if(idActual==0){
+
+           
+        }
+
+
+    }
+
+    function siguienteVentana(){
+        var o=document.getElementById("cardAbout").scrollHeight;
+        var chat=document.getElementById("chat").scrollHeight;
+        var tec=document.getElementById("containerTecnologias").scrollHeight;
+        
+        idActual++;
+        var y= window.scrollY;
+       if(idActual==1){
+        document.getElementById("circuloUP").style.display="block";
+        document.getElementById("trianguloUP").style.display="block";
+        document.getElementById("circuloUP").style.animationName="bajarShowUP";
+        document.getElementById("circuloUP").style.animationDuration="1s";
+
+
+       }
+       
+    
+
+    
+        console.log(idActual);
+
+        if(idActual==1){
+            location.href="#cardAbout";
+          document.getElementById("miFoto").style.animationName="prueba";
+          document.getElementById("miFoto").style.animationDuration="2s";
+
+
+          document.getElementById("barraSobreMi").style.animationName="mostrarRayaAbout";
+          document.getElementById("barraSobreMi").style.animationDuration="2s";
+          
+       
+          
+          
+       }
+       if(idActual==2){
+            location.href="#chat";
+          
+          
+       document.getElementById("barraConoceMas").style.animationName="rayaKnowMe";
+       document.getElementById("barraConoceMas").style.animationDuration="2s";
+
+var idPregunta="001";
+       for(var i=1; i <= 11; i++){
+        document.getElementById(idPregunta.toString()).style.animationName="mostrarPregunta";
+       document.getElementById(idPregunta.toString()).style.animationDuration="2s";
+       document.getElementById(idPregunta.toString()).style.display="block";
+       document.getElementById(idPregunta.toString()).style.animationDelar=i.toString()+"s";           
+
+       idPregunta="00"+i.toString();
+       if(i==10){
+        idPregunta="010"
+       }
+       }
+       
+       
+
+
+       
+       
+          
+          
+       }
+       if(idActual==3){
+        location.href="#containerTecnologias";
+
+        var idTec="L";
+        for(var i=1; i<=10; i++){
+            idTec="L"+i.toString();
+            document.getElementById(idTec.toString()).style.animationName="levantarLogo";
+       document.getElementById(idTec.toString()).style.animationDuration="2s";
+       document.getElementById(idTec.toString()).style.animationDelay=i+"s";
+
+
+        }
+
+        
+
+
+       }
+       if(idActual==4){
+           console.log("prueba");
+        location.href="#containerProyectos";
+       }
+       if(idActual==4){
+        document.getElementById("circulo").style.display="none";
+        document.getElementById("triangulo").style.display="none";
+
+
+       }
+        
+
+    }
+
+    var typed = new Typed('.puesto', {
+	strings: [
+		'<label>Web Developer</label>',
+		'Frontend',
+		'Backend',
+		
+	],
+	stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.
+	typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
+	startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
+	backSpeed: 75, // Velocidad en milisegundos para borrrar una letra,
+	smartBackspace: true, // Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+	shuffle: false, // Alterar el orden en el que escribe las palabras.
+	backDelay: 1500, // Tiempo de espera despues de que termina de escribir una palabra.
+	loop: true, // Repetir el array de strings
+	loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
+	showCursor: true, // Mostrar cursor palpitanto
+	cursorChar: '|', // Caracter para el cursor
+	contentType: 'html', // 'html' o 'null' para texto sin formato
+});
+    
+    
+
+</script>
 </body>
 </html>

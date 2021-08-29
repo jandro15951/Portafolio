@@ -9,6 +9,18 @@ body{
 
 
 }
+html{
+    scroll-behavior: smooth; 
+
+  
+    
+}
+.Inicio{
+    width: 100%;
+    height: 50px;
+    
+    position: absolute;
+}
 
 .contenedorGrid{
     
@@ -72,9 +84,11 @@ margin-left: 27%;
 }
 
 .circulo{
+    position: fixed;
     transition: all 1s;
-    margin-top: 150px;
-    
+    margin-top: 70vh;
+    margin-left: 80vw;
+    z-index: 100;
     background:white;
     width: 70px;
     height: 70px;
@@ -99,6 +113,41 @@ margin-left: 27%;
     background-color: black;
     cursor: pointer;
 }
+
+.circuloUP{
+    
+    position: fixed;
+    transition: all 1s;
+    margin-top: 60vh;
+    margin-left: 87.5vw;
+    z-index: 100;
+    background:white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px #ad8c30 solid;
+    display: none;
+}
+.trianguloUP {
+    width: 0; 
+    height: 0; 
+   
+    margin-left: 22%;
+    margin-top: 13%;
+    transform: rotate(270deg);
+    border-left: 40px solid #ad8c30;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent; 
+    display: none;
+    
+}
+.circuloUP:hover{
+    transform: none;
+    transition: all 1s;
+    transform: scale(1.2);
+    background-color: black;
+    cursor: pointer;
+}
 .barrasAbrirLateral{
     color:white;
     font-size: 50px;
@@ -117,7 +166,8 @@ margin-left: 27%;
   
 }
 .logoIzq1{
-    transition: all 2s;
+    animation:  barraIzq1;
+    animation-duration: 2s;
     position: absolute;
     border-radius: 10px;
     width: 115px;
@@ -126,7 +176,8 @@ background-color: #ad8c30;
 transform: rotate(135deg);
 }
 .logoIzq2{
-    transition: all 2s;
+    animation:  barraIzq2;
+    animation-duration: 2s;
     position: absolute;
     margin-top: 70px;
     width: 115px;
@@ -147,7 +198,8 @@ transform: rotate(105deg);
 border-radius: 10px;
 }
 .logoDer1{
-    transition: all 2s;
+    animation-name:barraDer1;
+    animation-duration: 2s;
     margin-left: 170px;
     position: absolute;
     margin-top: 75px;
@@ -160,7 +212,9 @@ border-radius: 10px;
 
 }
 .logoDer2{
-    transition: all 2s;
+    animation-name:barraDer2;
+    animation-duration: 2s;
+    
     margin-left: 170px;
     position: absolute;
     border-radius: 10px;
@@ -175,6 +229,7 @@ transform: rotate(50deg);
     align-items:center;
 }
 
+
 .flexLogo{
     align-self: flex-start;
     width: 63%;
@@ -183,14 +238,16 @@ transform: rotate(50deg);
     display: flex;
    align-items: center;
    flex-direction: column;
+   
 }
 
 .cardAbout{
     display: grid;
     grid-template-columns: 50% 50%;
     position: absolute;
-    margin-top: 120vh;
+    margin-top: 105vh;
     padding: 2vw;
+    padding-top: 10vw;
  
 }
 .aboutTitulo{
@@ -200,6 +257,7 @@ color: white;
 
 }
 .aboutBody{
+    margin-top: 10%;
     font-size: 15px;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 color: white;
@@ -217,11 +275,16 @@ color: white;
     font-family: 'Acme', sans-serif;
 }
 .barraSobreMi{
+    margin-top: 5%;
     width: 200px;
     height: 8px;
     background-color: azure;
 }
+.containerBtnAbout{
+    margin-top: 5%;
+}
 .btnContacto{
+   
     width: 150px;
     height: 40px;
     background-color: #ad8c30;
@@ -258,7 +321,7 @@ color: white;
     
     
     display: flex;
-        justify-content: flex-end;
+    justify-content: flex-end;
 }
 .marcoMiFoto{
    
@@ -273,6 +336,7 @@ color: white;
 
 .miFoto{
     
+    transition: all 3s;
     z-index: 5;
     margin-right: 100px;
    position:relative;
@@ -307,13 +371,15 @@ justify-content: flex-end;
 }
 .containerTecnologias{
    
-    padding: 5vw;
+    
+    padding-right: 5vw;
  width: 88.5vw;
     
     margin-top: 300vh;
     position: absolute;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
+    padding-top: 20vh;
 
 }
 .logoTec{
@@ -374,7 +440,7 @@ width: 120px;
 
 .chat{
     width: 100%;
-   
+    padding-top:18vh ;
     margin-top: 200vh;
     position: absolute;
     display: grid;
@@ -410,6 +476,7 @@ width: 120px;
     color: white;
     background-color: rgba(17, 17, 17, 0.993);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: none;
 }
 .preguntaChat:hover{
     transform: scale(1.1);
@@ -558,6 +625,10 @@ flex-direction: column;
 
 @media only screen and (max-width:500px){
     .circulo{display: none;}
+    .circuloUP{display: none;}
+    .preguntaChat{display: block;}
+    Html{overflow-y: visible;}
+    
 .cardAbout{
    display: flex;
    flex-direction: column;
@@ -588,10 +659,12 @@ grid-template-columns: 100%;
     grid-template-columns: 100%;
 }
 .containerTecnologias{
+   
     margin-left: 40px;
   width: 78%;
     margin-top: 550vh;
     grid-template-columns: 50% 50%;
+    padding-top: 20vh;
     
 }
 .logoPhp{
@@ -604,11 +677,12 @@ grid-template-columns: 100%;
 }
 
 .containerProyectos{
-    margin-top: 700vh;
+    padding-top: 15vh;
+    margin-top: 1000vh;
     grid-template-columns: 100%;
 }
 .g1{
-    height: 5500px;
+    height: 1200vh;
 }
 .frameYoutube{
     width: 300px;
@@ -617,6 +691,7 @@ grid-template-columns: 100%;
 .flexLogo{
     margin-left: -80px;
 }
+
 
 }
 @keyframes blancoNC {
@@ -628,4 +703,221 @@ grid-template-columns: 100%;
         filter: grayscale(0%);
     }
   }
+
+  @keyframes prueba{
+    from {
+        
+        display: none;
+margin-top: 400px;
+  border:none;
+
+    
+    }
+  
+    to {
+        display: block;
+    }
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: .15;
+    }
+    25% {
+        opacity: .35;
+    }
+    45% {
+        opacity: .45
+    }
+    75% {
+        opacity: .70;
+    }
+  }
+  @keyframes mostrarRayaAbout {
+      from{
+        margin-top: 5%;
+        width: 0px;
+        
+      }
+      to{
+        margin-top: 5%;
+        width: 200px;
+     
+      }
+      0%{
+        width: 0px;
+      }
+      100%{
+        width: 200px;
+      }
+  }
+
+  @keyframes rayaKnowMe{
+
+    0%{
+width: 0%;
+    }
+    100%{
+width: 100%;
+    }
+  }
+
+
+  @keyframes mostrarPregunta{
+
+    0%{
+opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+       
+    }
+  }
+
+  @keyframes levantarLogo{
+
+0%{
+    filter: grayscale(50%);
+}
+50%{
+    filter: grayscale(0%);
+    transform: scale(1.5);
+}
+100%{
+    filter: grayscale(50%);
+}
+
+  }
+
+
+
+  @keyframes bajarShowUP {
+    0%{
+        opacity: 0%;
+        margin-top: 0vh;
+        margin-left: 0vw;
+    }
+    100%{
+        margin-top: 60vh;
+    margin-left: 87.5vw;
+    }
+      
+  }
+
+  @keyframes bajarShow {
+    0%{
+        opacity: 0%;
+        margin-top: 0vh;
+        margin-left: 0vw;
+    }
+    100%{
+        margin-top: 70vh;
+    margin-left: 80vw;
+    }
+      
+  }
+
+  @keyframes barraIzq1 {
+      
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 2px 4px 15px white;
+    }
+    100%{
+        
+        border-radius: 10px;
+        width: 115px;
+    height: 20px;
+    background-color: #ad8c30;
+    transform: rotate(135deg);
+    }
+
+
+  }
+
+  @keyframes barraIzq2 {
+      
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 2px 4px 15px white;
+    }
+    100%{
+        
+        margin-top: 70px;
+    width: 115px;
+height: 20px;
+transform: rotate(45deg);
+    }
+
+
+  }
+
+
+  @keyframes barraDer1 {
+      
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 2px 4px 15px white;
+    }
+    100%{
+        
+        margin-left: 170px;
+   
+    margin-top: 75px;
+    
+
+transform: rotate(135deg);
+    }
+
+
+  }
+
+
+  @keyframes barraDer2 {
+      
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 2px 4px 15px white;
+    }
+    100%{
+        
+        margin-left: 170px;
+    position: absolute;
+    border-radius: 10px;
+    width: 115px;
+height: 20px;
+background-color: #ad8c30;
+transform: rotate(50deg);
+    }
+
+
+  }
+
+
+  @keyframes saltar {
+
+    0%{
+         
+
+
+    }
+    15%{
+        margin-top: -110px;
+
+    }
+    25%{
+        margin-top: 0px;
+    }
+    40%{margin-top:-60px}
+    60%{
+        margin-top: 0px;
+    }
+    80%{margin-top:-30px}
+    100%{
+
+        
+    }
+      
+  }
+  
 
