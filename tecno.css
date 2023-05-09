@@ -206,6 +206,21 @@ color: rgb(118, 20, 156);
     animation-duration: 2s;
 }
 
+.anima90{
+    animation-name: porcentaje90;
+    animation-duration: 2s;
+}
+
+.anima95{
+    animation-name: porcentaje95;
+    animation-duration: 2s;
+}
+
+.anima100{
+    animation-name: porcentaje100;
+    animation-duration: 2s;
+}
+
 
 
 .pVue{
@@ -308,6 +323,44 @@ html{
     100%{
         color:wheat;
         width: 75%;
+    }
+
+}
+
+@keyframes porcentaje90{
+    0%{
+        width: 0%;
+        color:rgb(33, 41, 43);
+    }
+    100%{
+        color:wheat;
+        width: 90%;
+    }
+
+}
+
+
+@keyframes porcentaje95{
+    0%{
+        width: 0%;
+        color:rgb(33, 41, 43);
+    }
+    100%{
+        color:wheat;
+        width: 95%;
+    }
+
+}
+
+
+@keyframes porcentaje100{
+    0%{
+        width: 0%;
+        color:rgb(33, 41, 43);
+    }
+    100%{
+        color:wheat;
+        width: 100%;
     }
 
 }
